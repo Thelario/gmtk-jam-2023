@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90a4257ac5fa44e7ba6406916b74f629, type: 3}
+  m_Name: Iron
+  m_EditorClassIdentifier: 
+  name: Ir
+  itemSprite: {fileID: 7482667652216324306, guid: a58553c64b1b0c946b26dc402abc4103, type: 3}
+  itemColor: {r: 0.34901962, g: 0.34901962, b: 0.34901962, a: 1}

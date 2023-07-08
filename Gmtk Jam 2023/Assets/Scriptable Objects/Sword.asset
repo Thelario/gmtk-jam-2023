@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a4257ac5fa44e7ba6406916b74f629, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  name: Sw
-  itemSprite: {fileID: 7482667652216324306, guid: a58553c64b1b0c946b26dc402abc4103, type: 3}
-  itemColor: {r: 0.95686275, g: 0.62352943, b: 0.039215688, a: 1}
+  itemSprite: {fileID: -1031806101, guid: 67589e69105187943b7d43eaaac85b40, type: 3}
+  itemSpriteOutline: {fileID: 153771568, guid: 348cbb8598dae4945888eb0f558ddb53, type: 3}
+  derivedItems:
+  - {fileID: 11400000, guid: 38094f416bad83349bc81422b380f159, type: 2}
+  - {fileID: 11400000, guid: 8ddc312fa0f67f749adef0f1763be2df, type: 2}
+  - {fileID: 11400000, guid: eebdb56baa553a845a7c44554931cb7e, type: 2}

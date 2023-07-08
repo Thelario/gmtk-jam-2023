@@ -1,3 +1,5 @@
+using Game.Managers;
+using Game.UI;
 using UnityEngine;
 
 namespace Game
@@ -9,6 +11,9 @@ namespace Game
 		[SerializeField] private LayerMask ignoreLayer;
 		[SerializeField] private Rigidbody2D rb2D;
 		[SerializeField] private Transform itemOnTop;
+		[SerializeField] private SpriteRenderer body;
+		[SerializeField] private Sprite defaultSprite;
+		[SerializeField] private Sprite itemPickedSprite;
 
 		private float _horizontal;
 		private float _vertical;
@@ -20,9 +25,19 @@ namespace Game
 		
 		private void Update()
 		{
+			GetPauseInput();
 			GetMoveInput();
 			GetDropInput();
 			GetInteractionInput();
+		}
+
+		private void GetPauseInput()
+		{
+			if (!Input.GetKeyDown(KeyCode.Escape))
+				return;
+			
+			TimeManager.Instance.Pause();
+			CanvasManager.Instance.SwitchCanvas(CanvasType.GamePauseMenu);
 		}
 
 		private void GetMoveInput()
@@ -39,12 +54,28 @@ namespace Game
 			if (!Input.GetMouseButtonDown(0)) 
 				return;
 
-			if (_currentItem != null)
-				_currentItem.GetComponent<Item>().DropItem();
-			
-			_currentItem = _currentInteractable.Interact();
-			_currentItem.transform.SetParent(itemOnTop);
-			_currentItem.transform.localPosition = Vector3.zero;
+			if (_currentInteractable.GetInteractableType() == InteractableType.Item)
+			{
+				if (_currentItem != null)
+					_currentItem.GetComponent<Item>().DropItem();
+
+				body.sprite = itemPickedSprite;
+				_currentItem = _currentInteractable.Interact();
+				_currentItem.transform.SetParent(itemOnTop);
+				_currentItem.transform.localPosition = Vector3.zero;
+			}
+			else
+			{
+				if (_currentItem == null)
+					return;
+
+				if (_currentInteractable.CanInteract(_currentItem.GetComponent<Item>()))
+				{
+					_currentItem.UseItem();
+					_currentItem = null;
+					body.sprite = defaultSprite;
+				}
+			}
 		}
 
 		private void GetDropInput()
@@ -54,12 +85,10 @@ namespace Game
 
 			if (_currentItem == null)
 				return;
-			
-			if (_currentItem.transform.childCount <= 0)
-				return;
-			
+
 			_currentItem.GetComponent<Item>().DropItem();
 			_currentItem = null;
+			body.sprite = defaultSprite;
 		}
 		
 		private void FixedUpdate()

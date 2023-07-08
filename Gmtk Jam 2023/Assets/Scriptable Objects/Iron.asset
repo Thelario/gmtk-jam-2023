@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a4257ac5fa44e7ba6406916b74f629, type: 3}
   m_Name: Iron
   m_EditorClassIdentifier: 
-  name: Ir
-  itemSprite: {fileID: 7482667652216324306, guid: a58553c64b1b0c946b26dc402abc4103, type: 3}
-  itemColor: {r: 0.34901962, g: 0.34901962, b: 0.34901962, a: 1}
+  itemSprite: {fileID: -280334966, guid: 67589e69105187943b7d43eaaac85b40, type: 3}
+  itemSpriteOutline: {fileID: -465031973, guid: 348cbb8598dae4945888eb0f558ddb53, type: 3}
+  derivedItems: []

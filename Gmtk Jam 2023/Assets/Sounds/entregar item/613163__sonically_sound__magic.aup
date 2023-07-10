@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="613163__sonically_sound__magic_data" version="1.3.0" audacityversion="2.4.2" sel0="1.3123972976" sel1="1.3123972976" vpos="0" h="0.0000000000" zoom="169.1560935148" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="ARTIST" value="Enes DENİZ"/>
+		<tag name="COPYRIGHT" value="Enes DENİZ"/>
+		<tag name="DATE" value="2021/12/29 18:22:31"/>
+		<tag name="TITLE" value="Sihir"/>
+		<tag name="ALBUMARTIST" value="Enes DENİZ"/>
+	</tags>
+	<wavetrack name="613163__sonically_sound__magic" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="57877">
+				<waveblock start="0">
+					<simpleblockfile filename="e080862b.au" len="57877" min="-0.726501" max="0.771332" rms="0.138137"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="613163__sonically_sound__magic" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="57877">
+				<waveblock start="0">
+					<simpleblockfile filename="e08082a7.au" len="57877" min="-0.580505" max="0.694275" rms="0.118524"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

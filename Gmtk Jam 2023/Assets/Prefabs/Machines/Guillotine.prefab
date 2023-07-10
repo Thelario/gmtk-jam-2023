@@ -304,7 +304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2569442656170438254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0.85, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -362,7 +362,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &3549518078493456371
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,6 +877,7 @@ GameObject:
   - component: {fileID: 7693180102056716832}
   - component: {fileID: 7693180102056716833}
   - component: {fileID: 8204419526818372517}
+  - component: {fileID: 669107940}
   m_Layer: 6
   m_Name: Guillotine
   m_TagString: Untagged
@@ -917,7 +918,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.033065975, y: -0.094706416}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -928,7 +929,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.7681459, y: 1.1471531}
   m_EdgeRadius: 0
 --- !u!114 &8204419526818372517
 MonoBehaviour:
@@ -949,16 +950,39 @@ MonoBehaviour:
   itemPrefab: {fileID: 8791671236899278431, guid: e09cb2482c53b0c41a85460dd51bb2ba, type: 3}
   slotsParent: {fileID: 7693180101430728040}
   processingSlider: {fileID: 398914146}
+  animator: {fileID: 669107940}
   validInputs:
   - {fileID: 11400000, guid: c1f91f8efe6795b42b2916a81c3a7293, type: 2}
   - {fileID: 11400000, guid: 09481ca3f5fb55642904657fcc71bc3d, type: 2}
   - {fileID: 11400000, guid: 373840a5567483c4c9b0f897beaaad1a, type: 2}
   - {fileID: 11400000, guid: 921527177a95029409b3636abf0d1a1d, type: 2}
+  - {fileID: 11400000, guid: f6cb762d013cdd74a8421706bcbdc78c, type: 2}
+  - {fileID: 11400000, guid: 5b7b511e8b92a664284e425b6119c6b7, type: 2}
   cleaver: {fileID: 2569442656170438254}
-  yStartPos: 1.25
-  yFinalPos: 0
+  yStartPos: 0.85
+  yFinalPos: -0.5
   timeToDrop: 0.15
   timeToComeBackUp: 0.35
+--- !u!95 &669107940
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7693180102056716835}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6caa071e9713be142a9fb7237e19f8a0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &7693180102183154904
 GameObject:
   m_ObjectHideFlags: 0

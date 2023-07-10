@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.23, y: 3.74}
   m_SizeDelta: {x: 8, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5001350801940620409
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -280334966, guid: 67589e69105187943b7d43eaaac85b40, type: 3}
+  m_Sprite: {fileID: -465031973, guid: 348cbb8598dae4945888eb0f558ddb53, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -150,7 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd5c7ded86260cf438039c7ffdb779f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outline: {fileID: 3430867211421434220}
+  defaultSprite: {fileID: 378181304, guid: 120a6e666d750a04bb8da0d0ccf47983, type: 3}
+  outlineSprite: {fileID: 1211188914, guid: 46be8fea8ed34b54f9f60e8ebfa3ed54, type: 3}
+  spriteRenderer: {fileID: 3430867211634876790}
   validInput: {fileID: 11400000, guid: fdc4d1c93c02d5547a0d09e5137b8363, type: 2}
 --- !u!1 &3430867211421434220
 GameObject:
@@ -261,8 +263,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3430867211634876788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.031, y: -0.08, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3430867210905630610}
@@ -308,9 +310,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: a58553c64b1b0c946b26dc402abc4103, type: 3}
-  m_Color: {r: 0.3301887, g: 0.21276565, b: 0, a: 1}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 378181304, guid: 120a6e666d750a04bb8da0d0ccf47983, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -379,7 +381,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &3430867212579672698
 MonoBehaviour:
